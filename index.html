@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NestVest — Temukan Properti Impianmu</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">Nest<span>Vest</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero" class="nav-link">Beranda</a></li>
+    <li><a href="#features" class="nav-link">Fitur</a></li>
+    <li><a href="#properties" class="nav-link">Properti</a></li>
+    <li><a href="#about" class="nav-link">Tentang</a></li>
+    <li><a href="#contact" class="nav-link">Kontak</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Mulai Investasi</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Platform Properti #1 Indonesia
+    </div>
+    <h1 class="hero-title">
+      Temukan properti<br><em>investasi terbaik</em><br>untukmu
+    </h1>
+    <p class="hero-subtitle">
+      Jelajahi ratusan properti premium pilihan dengan imbal hasil tinggi, data real-time, dan analitik cerdas untuk keputusan investasi yang lebih tepat.
+    </p>
+    <div class="hero-actions">
+      <a href="#properties" class="btn-primary">Lihat Properti</a>
+      <a href="#about" class="btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+        Pelajari Lebih Lanjut
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating analytics cards -->
+  <div class="hero-cards">
+    <!-- Occupancy Rate Card -->
+    <div class="glass-card">
+      <div class="card-label">Tingkat Hunian</div>
+      <div class="occupancy-ring">
+        <div class="ring-wrap">
+          <svg width="70" height="70" viewBox="0 0 70 70">
+            <circle cx="35" cy="35" r="28" fill="none" stroke="#f0f0f0" stroke-width="7"/>
+            <circle cx="35" cy="35" r="28" fill="none" stroke="#e74c3c" stroke-width="7" stroke-dasharray="175.9 175.9" stroke-dashoffset="0" stroke-linecap="round"/>
+            <circle cx="35" cy="35" r="28" fill="none" stroke="#27ae60" stroke-width="7" stroke-dasharray="110.9 175.9" stroke-dashoffset="-65" stroke-linecap="round"/>
+            <circle cx="35" cy="35" r="28" fill="none" stroke="#3498db" stroke-width="7" stroke-dasharray="42.4 175.9" stroke-dashoffset="-175.5" stroke-linecap="round"/>
+          </svg>
+          <div class="ring-center">74</div>
+        </div>
+        <div class="ring-legend">
+          <div class="legend-item"><div class="legend-dot red"></div>Disewa 62%</div>
+          <div class="legend-item"><div class="legend-dot green"></div>Perawatan 25%</div>
+          <div class="legend-item"><div class="legend-dot blue"></div>Kosong 13%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Investor Card -->
+    <div class="glass-card">
+      <div class="card-label">Performa Investor</div>
+      <div class="investor-row">
+        <div class="investor-info">
+          <div class="investor-name">Budi Santoso</div>
+        </div>
+        <div class="investor-val">Rp 3,8M</div>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar"></div>
+        <div class="progress-labels">
+          <span><span class="prog-dot primary"></span>Terealisasi</span>
+          <span><span class="prog-dot secondary"></span>Proyeksi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats strip -->
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num">2.400+</div>
+      <div class="stat-desc">Properti Terdaftar</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">18%</div>
+      <div class="stat-desc">Rata-rata ROI</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">12rb+</div>
+      <div class="stat-desc">Investor Aktif</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">98%</div>
+      <div class="stat-desc">Kepuasan Pengguna</div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH -->
+<div class="search-section">
+  <div class="search-box">
+    <div class="search-field">
+      <label>Lokasi</label>
+      <select>
+        <option>Jakarta Selatan</option>
+        <option>Jakarta Barat</option>
+        <option>Surabaya</option>
+        <option>Bali</option>
+        <option>Bandung</option>
+      </select>
+    </div>
+    <div class="divider-v"></div>
+    <div class="search-field">
+      <label>Tipe Properti</label>
+      <select>
+        <option>Semua Tipe</option>
+        <option>Rumah Mewah</option>
+        <option>Apartemen</option>
+        <option>Villa</option>
+        <option>Ruko</option>
+      </select>
+    </div>
+    <div class="divider-v"></div>
+    <div class="search-field">
+      <label>Kisaran Harga</label>
+      <select>
+        <option>Semua Harga</option>
+        <option>Rp 500jt – 1M</option>
+        <option>Rp 1M – 3M</option>
+        <option>Rp 3M – 5M</option>
+        <option>Rp 5M+</option>
+      </select>
+    </div>
+    <div class="divider-v"></div>
+    <div class="search-field">
+      <label>Kamar Tidur</label>
+      <select>
+        <option>Berapa saja</option>
+        <option>1 Kamar</option>
+        <option>2 Kamar</option>
+        <option>3+ Kamar</option>
+      </select>
+    </div>
+    <button class="search-btn">🔍 Cari Properti</button>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="reveal">
+    <div class="section-label">Mengapa NestVest?</div>
+    <h2 class="section-title">Semua yang kamu butuhkan<br>untuk <em>investasi cerdas</em></h2>
+    <p class="section-sub">Platform kami menggabungkan teknologi AI, data pasar real-time, dan komunitas investor terpercaya.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title">Analitik Real-Time</div>
+      <p class="feature-desc">Pantau performa investasi dengan dashboard interaktif — ROI, tingkat hunian, dan tren pasar semua dalam satu layar.</p>
+    </div>
+    <div class="feature-card accent reveal">
+      <div class="feature-icon">🤖</div>
+      <div class="feature-title">Rekomendasi AI</div>
+      <p class="feature-desc">Algoritma cerdas kami menganalisis ratusan variabel untuk merekomendasikan properti dengan potensi pertumbuhan tertinggi.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🔒</div>
+      <div class="feature-title">Transaksi Aman</div>
+      <p class="feature-desc">Setiap transaksi diverifikasi dan dilindungi oleh sistem escrow terintegrasi dan sertifikat digital bersertifikat.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">📍</div>
+      <div class="feature-title">Peta Interaktif</div>
+      <p class="feature-desc">Visualisasikan lokasi properti dengan overlay data infrastruktur, sekolah, transportasi, dan potensi harga sekitar.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">💼</div>
+      <div class="feature-title">Manajemen Portofolio</div>
+      <p class="feature-desc">Kelola semua aset propertimu dari satu tempat — laporan bulanan, pajak, dan dokumen legal tersimpan otomatis.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🤝</div>
+      <div class="feature-title">Komunitas Investor</div>
+      <p class="feature-desc">Terhubung dengan 12.000+ investor berpengalaman, berbagi insight, dan belajar dari kisah sukses mereka.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROPERTIES -->
+<section id="properties">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label">Pilihan Terbaik</div>
+      <h2 class="section-title">Properti <em>Unggulan</em></h2>
+    </div>
+    <div class="prop-tabs">
+      <button class="prop-tab active">Semua</button>
+      <button class="prop-tab">Dijual</button>
+      <button class="prop-tab">Disewa</button>
+      <button class="prop-tab">Investasi</button>
+    </div>
+  </div>
+
+  <div class="properties-grid">
+    <div class="prop-card reveal">
+      <div class="prop-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Villa Modern Pondok Indah">
+        <span class="prop-badge">Premium</span>
+        <button class="prop-save">♡</button>
+      </div>
+      <div class="prop-body">
+        <div class="prop-price">Rp 4,5 Miliar</div>
+        <div class="prop-name">Villa Modern Pondok Indah</div>
+        <div class="prop-loc">📍 Pondok Indah, Jakarta Selatan</div>
+        <div class="prop-specs">
+          <div class="spec"><span class="spec-icon">🛏</span> 4 Kamar</div>
+          <div class="spec"><span class="spec-icon">🚿</span> 3 KM</div>
+          <div class="spec"><span class="spec-icon">📐</span> 350 m²</div>
+          <div class="spec"><span class="spec-icon">🚗</span> 2 Garasi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prop-card reveal">
+      <div class="prop-img-wrap">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Rumah Minimalis BSD">
+        <span class="prop-badge new">Baru</span>
+        <button class="prop-save">♡</button>
+      </div>
+      <div class="prop-body">
+        <div class="prop-price">Rp 1,8 Miliar</div>
+        <div class="prop-name">Rumah Minimalis BSD City</div>
+        <div class="prop-loc">📍 BSD City, Tangerang Selatan</div>
+        <div class="prop-specs">
+          <div class="spec"><span class="spec-icon">🛏</span> 3 Kamar</div>
+          <div class="spec"><span class="spec-icon">🚿</span> 2 KM</div>
+          <div class="spec"><span class="spec-icon">📐</span> 180 m²</div>
+          <div class="spec"><span class="spec-icon">🚗</span> 1 Garasi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prop-card reveal">
+      <div class="prop-img-wrap">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80" alt="Villa Tepi Pantai Bali">
+        <span class="prop-badge hot">Hot</span>
+        <button class="prop-save">♡</button>
+      </div>
+      <div class="prop-body">
+        <div class="prop-price">Rp 8,2 Miliar</div>
+        <div class="prop-name">Villa Tepi Pantai Seminyak</div>
+        <div class="prop-loc">📍 Seminyak, Bali</div>
+        <div class="prop-specs">
+          <div class="spec"><span class="spec-icon">🛏</span> 5 Kamar</div>
+          <div class="spec"><span class="spec-icon">🚿</span> 5 KM</div>
+          <div class="spec"><span class="spec-icon">📐</span> 500 m²</div>
+          <div class="spec"><span class="spec-icon">🏊</span> Kolam Renang</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-img-wrap reveal">
+    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80" alt="Properti Premium">
+    <div class="about-float">
+      <div class="about-float-num">Rp 2,1T+</div>
+      <div class="about-float-label">Total Nilai Properti Terdaftar</div>
+    </div>
+  </div>
+  <div class="about-content reveal">
+    <div>
+      <div class="section-label">Tentang NestVest</div>
+      <h2 class="section-title">Kami percaya setiap orang berhak berinvestasi dengan <em>lebih cerdas</em></h2>
+    </div>
+    <p class="about-text">
+      NestVest lahir dari misi sederhana: membuat investasi properti lebih transparan, mudah diakses, dan menguntungkan bagi semua orang — dari investor pemula hingga profesional berpengalaman.
+    </p>
+    <div class="about-checks">
+      <div class="check-item"><div class="check-icon">✓</div>Verifikasi properti berlapis dengan teknologi AI dan tim ahli berpengalaman</div>
+      <div class="check-item"><div class="check-icon">✓</div>Data harga pasar real-time dari lebih dari 50 kota di seluruh Indonesia</div>
+      <div class="check-item"><div class="check-icon">✓</div>Layanan konsultasi gratis dengan agen bersertifikat kami kapan saja</div>
+      <div class="check-item"><div class="check-icon">✓</div>Proses kepemilikan digital yang aman, cepat, dan 100% legal</div>
+    </div>
+    <div class="about-actions">
+      <a href="#properties" class="btn-primary btn-secondary">Lihat Semua Properti</a>
+      <a href="#contact" class="btn-ghost secondary">Hubungi Kami</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="reveal section-intro">
+    <div class="section-label">Apa Kata Mereka</div>
+    <h2 class="section-title light">Cerita sukses <em class="text-gold">para investor</em> kami</h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Platform yang luar biasa! Dalam 8 bulan, portofolio saya bertumbuh 23%. Analitiknya sangat membantu dalam pengambilan keputusan yang tepat."</p>
+      <div class="testi-author">
+        <img src="https://i.pravatar.cc/100?img=11" alt="Sari" class="testi-avatar">
+        <div>
+          <div class="testi-name">Sari Dewi</div>
+          <div class="testi-role">Investor Properti · Jakarta</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Saya pemula di investasi properti, tapi NestVest membuat semuanya sangat mudah dipahami. Tim support-nya juga sangat responsif dan profesional."</p>
+      <div class="testi-author">
+        <img src="https://i.pravatar.cc/100?img=33" alt="Reza" class="testi-avatar">
+        <div>
+          <div class="testi-name">Reza Permana</div>
+          <div class="testi-role">Pengusaha Muda · Surabaya</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Rekomendasi AI-nya benar-benar akurat. Villa di Bali yang disarankan platform ini sekarang memberikan rental yield 15% per tahun. Luar biasa!"</p>
+      <div class="testi-author">
+        <img src="https://i.pravatar.cc/100?img=47" alt="Maya" class="testi-avatar">
+        <div>
+          <div class="testi-name">Maya Anggraini</div>
+          <div class="testi-role">Investor Senior · Bandung</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section id="contact">
+  <div class="cta-inner reveal">
+    <div class="section-label center">Mulai Sekarang</div>
+    <h2 class="cta-title">Wujudkan <em>impian properti</em><br>kamu hari ini</h2>
+    <p class="cta-sub">Daftarkan email kamu dan dapatkan akses eksklusif ke listing terbaru, laporan pasar bulanan, dan konsultasi gratis dengan ahli kami.</p>
+    <div class="cta-form">
+      <input type="email" placeholder="Masukkan email kamu...">
+      <button>Daftar Gratis</button>
+    </div>
+    <p class="footnote">🔒 Privasi terjamin. Tidak ada spam. Berhenti kapan saja.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <span class="nav-logo">Nest<span>Vest</span></span>
+    <p class="footer-desc">Platform investasi properti terpercaya di Indonesia. Temukan, analisis, dan miliki properti impianmu dengan mudah.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Properti</h4>
+    <ul>
+      <li><a href="#">Rumah</a></li>
+      <li><a href="#">Apartemen</a></li>
+      <li><a href="#">Villa</a></li>
+      <li><a href="#">Komersial</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Perusahaan</h4>
+    <ul>
+      <li><a href="#">Tentang Kami</a></li>
+      <li><a href="#">Karir</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Pers</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Bantuan</h4>
+    <ul>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Hubungi Kami</a></li>
+      <li><a href="#">Kebijakan Privasi</a></li>
+      <li><a href="#">Syarat & Ketentuan</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <span>twenty-twenty-five build with love ❤ . </span>
+    <span>aaidilakbarr</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
